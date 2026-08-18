@@ -26,7 +26,7 @@ export default function LinhaHorse() {
             </div>
           </div>
         )}
-        {/*mudança 2/}
+        {/*mudança 2 1 3 - */}
         {/* CABECALHO */}
         <div className="sticky top-0 w-full z-50 flex items-center justify-between px-[27px] h-[91px] bg-[#726D48]/[0.76] backdrop-blur-sm">
           <button
