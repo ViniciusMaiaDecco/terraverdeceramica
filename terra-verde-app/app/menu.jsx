@@ -5,7 +5,7 @@ export default function Menu() {
     <div className="w-[220px] h-full flex flex-col shadow-2xl overflow-y-auto bg-[#726D48]">
       {/* Seção Loja */}
       <div className="bg-[#726D48] flex flex-col pt-[40px] pb-[25px] px-[20px]">
-        <h2 
+        <h2
           className="text-[#A8B59B] font-cormorantGaramond text-3xl font-bold mb-[18px]"
           style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.3)' }}
         >
@@ -17,7 +17,7 @@ export default function Menu() {
           <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Centro de Mesa</p>
           <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Copos & Canecas</p>
           <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Linha Horses</p>
-          <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Linha Natureza</p>
+          <Link href="/linha-natureza" className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Linha Natureza</Link>
           <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Outros</p>
           <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Tudo</p>
         </div>
@@ -26,7 +26,7 @@ export default function Menu() {
       {/* Seção Home */}
       <div className="bg-[#A8B59B] flex flex-col pt-[20px] pb-[30px] px-[20px]">
         <Link href="/">
-          <h2 
+          <h2
             className="text-[#F2EDE7] font-cormorantGaramond text-3xl font-bold mb-[18px] cursor-pointer hover:underline"
             style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.2)' }}
           >

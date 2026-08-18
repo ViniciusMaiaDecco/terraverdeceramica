@@ -94,7 +94,7 @@ export default function TelaInicial() {
           {/* Sacola de Compras */}
           <button className="cursor-pointer bg-transparent border-0 p-0 flex items-center justify-center w-10 h-10 hover:opacity-80">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 8V6C7 4.89543 7.89543 4 9 4H15C16.1046 4 17 4.89543 17 6V8H20.407C20.806 8 21.0963 8.38472 20.9702 8.76307L18.6369 15.7631C18.4239 16.4023 17.8286 16.8333 17.1558 16.8333H6.84419C6.17144 16.8333 5.57608 16.4023 5.36307 15.7631L3.02981 8.76307C2.9037 8.38472 3.19399 8 3.59302 8H7ZM9 8H15V6H9V8ZM7 10H5.59302L7.25969 15H16.7403L18.407 10H17V11H15V10H9V11H7V10Z" fill="#5E6649"/>
+              <path d="M7 8V6C7 4.89543 7.89543 4 9 4H15C16.1046 4 17 4.89543 17 6V8H20.407C20.806 8 21.0963 8.38472 20.9702 8.76307L18.6369 15.7631C18.4239 16.4023 17.8286 16.8333 17.1558 16.8333H6.84419C6.17144 16.8333 5.57608 16.4023 5.36307 15.7631L3.02981 8.76307C2.9037 8.38472 3.19399 8 3.59302 8H7ZM9 8H15V6H9V8ZM7 10H5.59302L7.25969 15H16.7403L18.407 10H17V11H15V10H9V11H7V10Z" fill="#5E6649" />
             </svg>
           </button>
         </div>
@@ -362,7 +362,7 @@ export default function TelaInicial() {
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Centro de Mesa</Link>
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Copos & Canecas</Link>
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Linha Horse</Link>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Linha Natureza</Link>
+                <Link href="/linha-natureza" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Linha Natureza</Link>
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Outros</Link>
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Tudo</Link>
               </div>
