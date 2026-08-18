@@ -12,14 +12,14 @@ export default function Menu() {
           Loja
         </h2>
         <div className="flex flex-col gap-[10px]">
-          <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Bolws</p>
-          <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Pratos</p>
-          <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Centro de Mesa</p>
-          <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Copos & Canecas</p>
-          <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Linha Horses</p>
+          <Link href="/bowls" className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Bolws</Link>
+          <Link href="/" className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Pratos</Link>
+          <Link href="/linha-centrp-de-mesa" className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Centro de Mesa</Link>
+          <Link href="/linha-copos-e-canecas" className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Copos & Canecas</Link>
+          <Link href="/linha-horse" className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Linha Horses</Link >
           <Link href="/linha-natureza" className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Linha Natureza</Link>
-          <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Outros</p>
-          <p className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Tudo</p>
+          <Link href="/outros" className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Outros</Link >
+          <Link href="/" className="text-[#F2EDE7] font-montserrat text-lg leading-tight cursor-pointer hover:underline">Tudo</Link>
         </div>
       </div>
 
