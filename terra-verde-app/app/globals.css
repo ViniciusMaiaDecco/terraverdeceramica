@@ -46,4 +46,20 @@ body {
   .font-sFPro {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   }
+
+  /* Animação da gaveta do menu lateral */
+  .animate-slideIn {
+    animation: slideIn 0.28s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

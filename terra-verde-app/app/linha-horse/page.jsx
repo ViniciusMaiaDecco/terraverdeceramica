@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -13,18 +13,7 @@ export default function LinhaHorse() {
 
         {/* Menu Hamburguer Lateral */}
         {menuOpen && (
-          <div className="fixed inset-0 z-50">
-            <div className="absolute inset-0 bg-black/40 backdrop-blur-xs" onClick={() => setMenuOpen(false)}></div>
-            <div className="absolute left-0 top-0 w-full h-full z-50">
-              <button
-                onClick={() => setMenuOpen(false)}
-                className="absolute right-6 top-8 z-50 text-[#F2EDE7] hover:text-white text-3xl font-bold cursor-pointer bg-transparent border-0"
-              >
-                ×
-              </button>
-              <Menu />
-            </div>
-          </div>
+          <Menu onClose={() => setMenuOpen(false)} />
         )}
         {/* CABECALHO */}
         <div className="sticky top-0 w-full z-50 flex items-center justify-between px-[27px] h-[91px] bg-[#726D48]/[0.76] backdrop-blur-sm">
@@ -154,13 +143,13 @@ export default function LinhaHorse() {
                   LOJA
                 </p>
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Bolws</Link>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Pratos</Link>
+                <Link href="/pratos-e-tigelas" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Pratos</Link>
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Centro de Mesa</Link>
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Copos &amp; Canecas</Link>
                 <Link href="/linha-horse" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Linha Horse</Link>
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Linha Natureza</Link>
                 <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Outros</Link>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Tudo</Link>
+                <Link href="/todos-os-produtos" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Tudo</Link>
               </div>
               <img src="/LogoSemFundoBranco2.png" className="w-[100px] object-contain opacity-90 mt-[45px]" alt="Terra Verde Logo" />
             </div>

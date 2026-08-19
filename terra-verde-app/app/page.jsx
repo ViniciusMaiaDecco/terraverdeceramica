@@ -55,22 +55,11 @@ export default function TelaInicial() {
 
         {/* Menu Hambúrguer Lateral */}
         {menuOpen && (
-          <div className="fixed inset-0 z-50">
-            <div className="absolute inset-0 bg-black/40 backdrop-blur-xs" onClick={() => setMenuOpen(false)}></div>
-            <div className="absolute left-0 top-0 w-full h-full z-50">
-              <button
-                onClick={() => setMenuOpen(false)}
-                className="absolute right-6 top-8 z-50 text-[#F2EDE7] hover:text-white text-3xl font-bold cursor-pointer bg-transparent border-0"
-              >
-                ✕
-              </button>
-              <Menu />
-            </div>
-          </div>
+          <Menu onClose={() => setMenuOpen(false)} />
         )}
 
         {/* ====== CABEÇALHO ====== */}
-        <div className="sticky top-0 w-full z-50 flex items-center justify-between px-[27px] h-[145px] bg-[#F2EDE7]">
+        <div className="sticky top-0 w-full z-50 flex items-center justify-between px-[27px] h-[125px] bg-[#F2EDE7]">
           {/* Menu Hambúrguer */}
           <button
             onClick={() => setMenuOpen(true)}
@@ -118,9 +107,9 @@ export default function TelaInicial() {
                 <p className="text-[#F2EDE7] font-montserrat text-[15px] mb-1">PEÇAS AUTORAIS</p>
                 <p className="text-[#F2EDE7] font-cormorantGaramond text-[45px] leading-[1.05]">Inspiradas na natureza, feitas à mão.</p>
                 <div className="mt-auto w-full flex justify-center">
-                  <button className="rounded-[33px] bg-[#5E6649] w-[260px] h-[54px] flex items-center justify-center cursor-pointer border-0">
+                  <Link href="/" className="rounded-[33px] bg-[#5E6649] w-[260px] h-[54px] flex items-center justify-center cursor-pointer border-0 hover:opacity-90 transition-opacity">
                     <span className="text-[#F2EDE7] font-montserrat text-lg">Conheça a loja</span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -133,9 +122,9 @@ export default function TelaInicial() {
                 <p className="text-[#F2EDE7] font-montserrat text-[15px] mb-1">PEÇAS AUTORAIS</p>
                 <p className="text-[#F2EDE7] font-cormorantGaramond text-[45px] leading-[1.05]">A essência dos cavalos em peças únicas.</p>
                 <div className="mt-auto w-full flex justify-center">
-                  <button className="rounded-[33px] bg-[#5E6649] w-[260px] h-[54px] flex items-center justify-center cursor-pointer border-0">
+                  <Link href="/linha-horse" className="rounded-[33px] bg-[#5E6649] w-[260px] h-[54px] flex items-center justify-center cursor-pointer border-0 hover:opacity-90 transition-opacity">
                     <span className="text-[#F2EDE7] font-montserrat text-lg">Linha Horse</span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -148,9 +137,9 @@ export default function TelaInicial() {
                 <p className="text-[#F2EDE7] font-montserrat text-[15px] mb-1">PEÇAS AUTORAIS</p>
                 <p className="text-[#F2EDE7] font-cormorantGaramond text-[45px] leading-[1.05]">Texturas, formas e cores inspiradas pela natureza.</p>
                 <div className="mt-auto w-full flex justify-center">
-                  <button className="rounded-[33px] bg-[#5E6649] w-[260px] h-[54px] flex items-center justify-center cursor-pointer border-0">
+                  <Link href="/linha-natureza" className="rounded-[33px] bg-[#5E6649] w-[260px] h-[54px] flex items-center justify-center cursor-pointer border-0 hover:opacity-90 transition-opacity">
                     <span className="text-[#F2EDE7] font-montserrat text-lg">Linha Natureza</span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -163,9 +152,9 @@ export default function TelaInicial() {
                 <p className="text-[#F2EDE7] font-montserrat text-[15px] mb-1">PEÇAS AUTORAIS</p>
                 <p className="text-[#F2EDE7] font-cormorantGaramond text-[45px] leading-[1.05]">A simplicidade da argila em sua forma mais pura!</p>
                 <div className="mt-auto w-full flex justify-center">
-                  <button className="rounded-[33px] bg-[#5E6649] w-[260px] h-[54px] flex items-center justify-center cursor-pointer border-0">
+                  <Link href="/" className="rounded-[33px] bg-[#5E6649] w-[260px] h-[54px] flex items-center justify-center cursor-pointer border-0 hover:opacity-90 transition-opacity">
                     <span className="text-[#F2EDE7] font-montserrat text-lg">Conheça a loja</span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -297,52 +286,52 @@ export default function TelaInicial() {
 
           {/* Botão Ver todos */}
           <div className="w-full flex justify-center py-[20px]">
-            <button className="rounded-[22px] bg-[#5E6649] w-[183px] h-[38px] flex items-center justify-center gap-2 cursor-pointer border-0 hover:opacity-90 transition-opacity">
+            <Link href="/" className="rounded-[22px] bg-[#5E6649] w-[183px] h-[38px] flex items-center justify-center gap-2 cursor-pointer border-0 hover:opacity-90 transition-opacity">
               <span className="text-[#F2EDE7] font-montserrat text-lg">Ver todos</span>
               <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.6894 8.16758L10.9741 15.0323C10.834 15.1755 10.6442 15.2559 10.4462 15.2559C10.2482 15.2559 10.0583 15.1755 9.91825 15.0323C9.77824 14.8892 9.69958 14.6951 9.69958 14.4927C9.69958 14.2903 9.77824 14.0962 9.91825 13.953L15.3605 8.39068H0.746154C0.548261 8.39068 0.358474 8.31032 0.218544 8.16728C0.0786125 8.02423 0 7.83023 0 7.62793C0 7.42564 0.0786125 7.23163 0.218544 7.08859C0.358474 6.94554 0.548261 6.86518 0.746154 6.86518H15.3605L9.91825 1.30282C9.77824 1.1597 9.69958 0.965581 9.69958 0.763175C9.69958 0.560768 9.77824 0.366652 9.91825 0.223529C10.0583 0.0804056 10.2482 0 10.4462 0C10.6442 0 10.834 0.0804056 10.9741 0.223529L17.6894 7.08829C17.7588 7.15912 17.8139 7.24325 17.8514 7.33584C17.889 7.42844 17.9083 7.52769 17.9083 7.62793C17.9083 7.72817 17.889 7.82742 17.8514 7.92002C17.8139 8.01262 17.7588 8.09674 17.6894 8.16758Z" fill="#F2EDE7" />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
 
         {/* ====== SEÇÕES DE CATEGORIAS ====== */}
         <div className="w-full px-[27px] flex flex-col gap-0">
           {/* Natureza */}
-          <div className="w-full relative" style={{ aspectRatio: '339/817' }}>
+          <Link href="/linha-natureza" className="w-full relative block" style={{ aspectRatio: '339/817' }}>
             <img src="/Natureza.png" className="w-full h-full object-cover absolute left-0 top-0" alt="Natureza" />
-            <div className="bg-[rgba(168,181,155,0.34)] w-full h-full absolute left-0 top-0"></div>
+            <div className="bg-[rgba(168,181,155,0.34)] w-full h-full absolute left-0 top-0 hover:bg-[rgba(168,181,155,0.50)] transition-colors duration-300"></div>
             <p className="text-[#FFFCF9] font-cormorantGaramond text-[45px] absolute left-1/2 top-[45%] -translate-x-1/2">
               Natureza
             </p>
-          </div>
+          </Link>
 
           {/* Horse */}
-          <div className="w-full relative" style={{ aspectRatio: '339/817' }}>
+          <Link href="/linha-horse" className="w-full relative block" style={{ aspectRatio: '339/817' }}>
             <img src="/Horse.png" className="w-full h-full object-cover absolute left-0 top-0" alt="Horse" />
-            <div className="bg-[rgba(216,198,176,0.24)] w-full h-full absolute left-0 top-0"></div>
+            <div className="bg-[rgba(216,198,176,0.24)] w-full h-full absolute left-0 top-0 hover:bg-[rgba(216,198,176,0.42)] transition-colors duration-300"></div>
             <p className="text-[#FFFCF9] font-cormorantGaramond text-[45px] absolute left-1/2 top-[46%] -translate-x-1/2">
               Horse
             </p>
-          </div>
+          </Link>
 
           {/* Bowls */}
-          <div className="w-full relative" style={{ aspectRatio: '339/817' }}>
+          <Link href="/bowls" className="w-full relative block" style={{ aspectRatio: '339/817' }}>
             <img src="/Bowls.png" className="w-full h-full object-cover absolute left-0 top-0" alt="Bowls" />
-            <div className="bg-[rgba(168,181,155,0.34)] w-full h-full absolute left-0 top-0"></div>
+            <div className="bg-[rgba(168,181,155,0.34)] w-full h-full absolute left-0 top-0 hover:bg-[rgba(168,181,155,0.50)] transition-colors duration-300"></div>
             <p className="text-[#FFFCF9] font-cormorantGaramond text-[45px] absolute left-1/2 top-[45%] -translate-x-1/2">
               Bowls
             </p>
-          </div>
+          </Link>
 
           {/* Outros */}
-          <div className="w-full relative" style={{ aspectRatio: '339/819' }}>
+          <Link href="/outros" className="w-full relative block" style={{ aspectRatio: '339/819' }}>
             <img src="/Outros.png" className="w-full h-full object-cover absolute left-0 top-0" alt="Outros" />
-            <div className="bg-[rgba(216,198,176,0.24)] w-full h-full absolute left-0 top-0"></div>
+            <div className="bg-[rgba(216,198,176,0.24)] w-full h-full absolute left-0 top-0 hover:bg-[rgba(216,198,176,0.42)] transition-colors duration-300"></div>
             <p className="text-[#FFFCF9] font-cormorantGaramond text-[45px] absolute left-1/2 top-[46%] -translate-x-1/2">
               Outros
             </p>
-          </div>
+          </Link>
         </div> {/* Fim do container w-full */}
         {/* ====== FOOTER ====== */}
         <div className="w-full flex flex-col">
@@ -357,14 +346,14 @@ export default function TelaInicial() {
                 >
                   LOJA
                 </p>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Bolws</Link>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Pratos</Link>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Centro de Mesa</Link>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Copos & Canecas</Link>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Linha Horse</Link>
+                <Link href="/bowls" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Bolws</Link>
+                <Link href="/pratos-e-tigelas" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Pratos</Link>
+                <Link href="/linha-centro-de-mesa" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Centro de Mesa</Link>
+                <Link href="/linha-copos-e-canecas" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Copos & Canecas</Link>
+                <Link href="/linha-horse" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Linha Horse</Link>
                 <Link href="/linha-natureza" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Linha Natureza</Link>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Outros</Link>
-                <Link href="/" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Tudo</Link>
+                <Link href="/outros" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Outros</Link>
+                <Link href="/todos-os-produtos" className="text-[#F2EDE7] font-montserrat text-[16px] cursor-pointer hover:underline">Tudo</Link>
               </div>
               {/* Logo Completa (com texto) alinhada mais acima */}
               <img
